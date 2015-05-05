@@ -20,5 +20,6 @@ ENV HOME=/home/nobody \
 WORKDIR /home/nobody
 RUN pip install --user https://github.com/okfn/messytables/archive/py23.zip
 RUN pip3 install --user https://github.com/okfn/messytables/archive/py23.zip
-
+RUN pip install --user pyhamcrest
+RUN pip3 install --user pyhamcrest
 COPY . /home/nobody/
