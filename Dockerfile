@@ -18,8 +18,6 @@ ENV HOME=/home/nobody \
     LANG=en_GB.UTF-8
 # LANG needed for httpretty install on Py3
 WORKDIR /home/nobody
-RUN pip install --user https://github.com/okfn/messytables/archive/py23.zip
-RUN pip3 install --user https://github.com/okfn/messytables/archive/py23.zip
-RUN pip install --user pyhamcrest
-RUN pip3 install --user pyhamcrest
+RUN pip install --user messytables pyhamcrest
+RUN pip3 install --user messytables pyhamcrest
 COPY . /home/nobody/
